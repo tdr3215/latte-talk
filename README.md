@@ -2,8 +2,6 @@
 
 ## Description
 
-
-
 ## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -15,22 +13,15 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-
-
 ## Usage
-
-
-    
 
 ## Credits
 
-[As a Programmer on Youtube](https://www.youtube.com/@asaprogrammer_)
-
-
+General Guide for Resources: [As a Programmer on Youtube](https://www.youtube.com/@asaprogrammer_)
 
 ## License
 
-MIT License
+[See licenses here...](./licenses/)
 
 ---
 
