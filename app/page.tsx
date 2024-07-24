@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonComp from "./components/ButtonComp";
+import ButtonComp from "./components/LoginButton";
 
 export default function Home() {
   return (
