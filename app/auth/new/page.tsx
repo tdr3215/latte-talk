@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import SignUpButton from "../../components/LoginButton";
-import CreateAccountButton from "../../components/CreateAccountButton";
+import CreateAccountButton from "../../components/buttons/CreateAccountButton";
+import Logo from "../../components/Logo";
 
 const CreateAccount = () => {
   return (
@@ -34,12 +34,24 @@ const CreateAccount = () => {
                 required
               />
             </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Confirm Password</span>
+              </label>
+              <input
+                id="confirm-password"
+                type="password"
+                placeholder="password"
+                className="input input-bordered"
+                required
+              />
+            </div>
             <CreateAccountButton />
           </form>
         </div>
-        <div>
-          <h1 className="mb-5 text-5xl font-bold text-center">Latte Talk</h1>
 
+        <div>
+          <Logo />
           <Image
             className="max-w-sm rounded-lg "
             src="/coffee-icons/002-menu.png"
