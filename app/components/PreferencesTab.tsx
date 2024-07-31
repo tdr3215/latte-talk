@@ -7,9 +7,9 @@ const PreferencesTab = () => {
     <div className="flex flex-wrap gap-2 mb-5 px-1 md:px-2">
       {/* Implment this later */}
       {/* <VolumeOnButton /> */}
+      <ThemeToggle />
 
       {/* Persist the theme in localStorage to save on refresh */}
-      <ThemeToggle />
     </div>
   );
 };

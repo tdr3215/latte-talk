@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState<string | null>("");
+  const [theme, setTheme] = useState<string | null>();
 
   const handleToggle = (e: React.FormEvent<HTMLInputElement>) => {
     if (e.currentTarget.checked) {
@@ -13,7 +13,7 @@ const ThemeToggle = () => {
     }
   };
   useEffect(() => {
-    localStorage.setItem("theme", theme ? theme : "retro");
+    localStorage.setItem("theme", theme ? theme : "coffee");
     const localTheme = localStorage.getItem("theme");
 
     if (localTheme) {
@@ -33,21 +33,21 @@ const ThemeToggle = () => {
             onChange={handleToggle}
           />
 
-          {/* sun icon */}
+          {/* moon icon */}
+
           <Image
             className="swap-off h-10 w-10 fill-current"
-            src={"/preference-tab-icons/lm-moon.png"}
-            alt="sun icon for light mode"
+            src={"/preference-tab-icons/lm-sun.png"}
+            alt="sun icon for dark mode"
             width={30}
             height={30}
           />
 
-          {/* moon icon */}
-
+          {/* sun icon */}
           <Image
             className="swap-on h-10 w-10 fill-current"
-            src={"/preference-tab-icons/dm-sun.png"}
-            alt="moon icon for dark mode"
+            src={"/preference-tab-icons/dm-moon.png"}
+            alt="moon icon for light mode"
             width={30}
             height={30}
           />
